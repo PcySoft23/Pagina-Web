@@ -1,0 +1,170 @@
+public class Notas {
+    
+    private Alumno alumno;
+    private double nota1;
+    private double nota2;
+    private double nota3;
+    private double nota4;
+    private double notaFinal;
+    private double porcentaje1;
+    private double porcentaje2;
+    private double porcentaje3;
+    private double porcentaje4;
+    
+    public Notas(){
+        porcentaje1=0.1;
+        porcentaje2= 0.2;
+        porcentaje3=0.2;
+        porcentaje4=0.5;
+                
+        
+    }
+
+    /**
+     * @return the alumno
+     */
+    public Alumno getAlumno() {
+        return alumno;
+    }
+
+    /**
+     * @param alumno the alumno to set
+     */
+    public void setAlumno(Alumno alumno) {
+        this.alumno = alumno;
+    }
+
+    /**
+     * @return the nota1
+     */
+    public double getNota1() {
+        return nota1;
+    }
+
+    /**
+     * @param nota1 the nota1 to set
+     */
+    public void setNota1(double nota1) {
+        this.nota1 = nota1;
+    }
+
+    /**
+     * @return the nota2
+     */
+    public double getNota2() {
+        return nota2;
+    }
+
+    /**
+     * @param nota2 the nota2 to set
+     */
+    public void setNota2(double nota2) {
+        this.nota2 = nota2;
+    }
+
+    /**
+     * @return the nota3
+     */
+    public double getNota3() {
+        return nota3;
+    }
+
+    /**
+     * @param nota3 the nota3 to set
+     */
+    public void setNota3(double nota3) {
+        this.nota3 = nota3;
+    }
+
+    /**
+     * @return the nota4
+     */
+    public double getNota4() {
+        return nota4;
+    }
+
+    /**
+     * @param nota4 the nota4 to set
+     */
+    public void setNota4(double nota4) {
+        this.nota4 = nota4;
+    }
+
+    /**
+     * @return the notaFinal
+     */
+    public double getNotaFinal() {
+        return notaFinal;
+    }
+
+    /**
+     * @param notaFinal the notaFinal to set
+     */
+    public void setNotaFinal(double notaFinal) {
+        this.notaFinal = notaFinal;
+    }
+
+    /**
+     * @return the porcentaje1
+     */
+    public double getPorcentaje1() {
+        return porcentaje1;
+    }
+
+    /**
+     * @param porcentaje1 the porcentaje1 to set
+     */
+    public void setPorcentaje1(double porcentaje1) {
+        this.porcentaje1 = porcentaje1;
+    }
+
+    /**
+     * @return the porcentaje2
+     */
+    public double getPorcentaje2() {
+        return porcentaje2;
+    }
+
+    /**
+     * @param porcentaje2 the porcentaje2 to set
+     */
+    public void setPorcentaje2(double porcentaje2) {
+        this.porcentaje2 = porcentaje2;
+    }
+
+    /**
+     * @return the porcentaje3
+     */
+    public double getPorcentaje3() {
+        return porcentaje3;
+    }
+
+    /**
+     * @param porcentaje3 the porcentaje3 to set
+     */
+    public void setPorcentaje3(double porcentaje3) {
+        this.porcentaje3 = porcentaje3;
+    }
+
+    /**
+     * @return the porcentaje4
+     */
+    public double getPorcentaje4() {
+        return porcentaje4;
+    }
+
+    /**
+     * @param porcentaje4 the porcentaje4 to set
+     */
+    public void setPorcentaje4(double porcentaje4) {
+        this.porcentaje4 = porcentaje4;
+    }
+    
+    //metodo para calcular nota
+    
+    public double calcularNoraFinal(){
+        notaFinal = nota1*porcentaje1 + nota2*porcentaje2 + nota3*porcentaje3+nota4*porcentaje4;
+        return Math.round(notaFinal * 100.0)/100.0;
+    }
+    
+    public String mostrarEstudiante(){
